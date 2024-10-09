@@ -1,27 +1,27 @@
 import React from 'react';
 
-const BlueprintTable = ({ blueprints }) => {
+const BlueprintTable = ({ blueprints, onOpen }) => {
   return (
-    <table id="blueprintsTable">
+    <table>
       <thead>
         <tr>
-          <th>Nombre del plano</th>
-          <th>Número de puntos</th>
+          <th>Nombre</th>
+          <th>Autor</th>
+          <th>Puntos</th>
+          <th>Acción</th>
         </tr>
       </thead>
       <tbody>
-        {blueprints.length === 0 ? (
-          <tr>
-            <td colSpan="2">No hay planos disponibles.</td>
+        {blueprints.map((blueprint) => (
+          <tr key={blueprint.name}>
+            <td>{blueprint.name}</td>
+            <td>{blueprint.author}</td>
+            <td>{blueprint.points.length}</td>
+            <td>
+              <button onClick={() => onOpen(blueprint)}>Abrir</button>
+            </td>
           </tr>
-        ) : (
-          blueprints.map((blueprint, index) => (
-            <tr key={index}>
-              <td>{blueprint.name}</td>
-              <td>{blueprint.points}</td>
-            </tr>
-          ))
-        )}
+        ))}
       </tbody>
     </table>
   );

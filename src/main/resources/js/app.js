@@ -1,5 +1,4 @@
 var app = (function () {
-    // Variables privadas
     var authorName = "";  // Almacena el nombre del autor seleccionado
     var blueprints = [];  // Almacena los planos y su tamaño
 

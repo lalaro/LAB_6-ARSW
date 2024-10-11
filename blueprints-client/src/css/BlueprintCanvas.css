@@ -1,0 +1,10 @@
+.canvas-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+canvas {
+  border: 1px solid black;
+  background-color: #f9f9f9;
+}

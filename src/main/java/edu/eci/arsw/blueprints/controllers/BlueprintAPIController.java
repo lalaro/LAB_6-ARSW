@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.CrossOrigin;
  *
  * @author hcadavid
  */
-@CrossOrigin(origins = "http://localhost:8080/index.html")
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping(value = "/blueprints")
 public class BlueprintAPIController {

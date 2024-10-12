@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Blueprints</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="/webjars/jquery/jquery.min.js"></script>
-    <script src="/webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/webjars/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <title>Blueprints App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Your scripts -->
+    <script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 </head>
 <body>
 <div class="container">
@@ -31,16 +35,8 @@
     </table>
 
     <p>Total points: <span id="totalPoints">0</span></p>
-
-    <!-- Botón para redirigir a la aplicación React -->
-    <button id="goToReactApp" class="btn btn-success">Ir a la Aplicación React</button>
 </div>
 
-<script>
-    // Redirigir a la aplicación React
-    document.getElementById("goToReactApp").onclick = function() {
-        window.location.href = "http://localhost:3000"; // Cambia esto si tu aplicación React está en una ruta diferente
-    };
-</script>
+
 </body>
 </html>

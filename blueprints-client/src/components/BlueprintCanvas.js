@@ -25,11 +25,11 @@ const BlueprintCanvas = ({ blueprint }) => {
   }, [blueprint]);
 
   return (
-    <div className="canvas-container">
-      <canvas ref={canvasRef} width={250} height={250} />
-      {blueprint && <p>Plano: {blueprint.name}</p>}
-    </div>
-  );
+      <div className="canvas-container">
+        <canvas ref={canvasRef} width={250} height={250} />
+        {blueprint && <p className="blueprint-name">Plano: {blueprint.name}</p>}
+      </div>
+    );
 };
 
 export default BlueprintCanvas;

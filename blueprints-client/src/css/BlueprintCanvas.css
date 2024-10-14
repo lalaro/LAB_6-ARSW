@@ -1,10 +1,32 @@
 .canvas-container {
   margin: 20px 0;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #e3f2fd;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 canvas {
-  border: 1px solid black;
-  background-color: #f9f9f9;
+  border: 4px solid #1976d2;
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+canvas:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.blueprint-name {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #1976d2;
+  font-weight: bold;
 }
